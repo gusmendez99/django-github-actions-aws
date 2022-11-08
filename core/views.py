@@ -1,5 +1,7 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+
+def index (request):
+   return render(request, 'app/index.html')
 
 def home(request):
-   text = """<h1>our mind blowing home page</h1>"""
-   return HttpResponse(text)
+   return render(request, 'app/index.html')
